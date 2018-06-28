@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgraundSky.pmg" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-h3-oHW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgraundNew" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-h3-oHW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <view alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3y-KY-Kfc">
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3y-KY-Kfc">
                                 <rect key="frame" x="67" y="62" width="240" height="68"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smsImages.pmg" translatesAutoresizingMaskIntoConstraints="NO" id="iPg-fx-Y81">
@@ -54,7 +54,7 @@
                                     <constraint firstAttribute="bottom" secondItem="MCw-ZA-guv" secondAttribute="bottom" constant="11" id="jLO-ur-4gV"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAM-9g-zf2">
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAM-9g-zf2">
                                 <rect key="frame" x="27" y="200" width="320" height="322"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjt-yP-hYg">
@@ -105,9 +105,8 @@
                                             <constraint firstAttribute="height" constant="2" id="OjD-dl-8BZ"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="app-7i-aUf">
-                                        <rect key="frame" x="69" y="268" width="182" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="app-7i-aUf">
+                                        <rect key="frame" x="69" y="280" width="182" height="22"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -120,10 +119,14 @@
                                     <constraint firstItem="ehe-AG-Cpi" firstAttribute="top" secondItem="wjO-5m-Bl0" secondAttribute="bottom" constant="20" id="ISF-Ei-EN7"/>
                                     <constraint firstItem="Kjt-yP-hYg" firstAttribute="top" secondItem="fAM-9g-zf2" secondAttribute="top" constant="8" id="Idf-14-eEb"/>
                                     <constraint firstItem="wjO-5m-Bl0" firstAttribute="top" secondItem="fAM-9g-zf2" secondAttribute="top" constant="70" id="LeF-wB-4UN"/>
+                                    <constraint firstAttribute="trailing" secondItem="app-7i-aUf" secondAttribute="trailing" constant="69" id="MTt-bc-ewo"/>
                                     <constraint firstAttribute="trailing" secondItem="wjO-5m-Bl0" secondAttribute="trailing" constant="30" id="OZ2-SF-gBR"/>
+                                    <constraint firstItem="app-7i-aUf" firstAttribute="top" secondItem="2xX-XZ-Xi4" secondAttribute="bottom" constant="20" id="XZT-Iu-NAa"/>
                                     <constraint firstAttribute="trailing" secondItem="hp2-WO-Mmw" secondAttribute="trailing" constant="125" id="cKB-eL-Bj0"/>
                                     <constraint firstItem="hp2-WO-Mmw" firstAttribute="top" secondItem="ehe-AG-Cpi" secondAttribute="bottom" constant="20" id="dlO-eC-8J5"/>
                                     <constraint firstAttribute="trailing" secondItem="2xX-XZ-Xi4" secondAttribute="trailing" constant="10" id="gfv-HC-eUN"/>
+                                    <constraint firstAttribute="bottom" secondItem="app-7i-aUf" secondAttribute="bottom" constant="20" id="ixc-pr-odW"/>
+                                    <constraint firstItem="app-7i-aUf" firstAttribute="leading" secondItem="fAM-9g-zf2" secondAttribute="leading" constant="69" id="kvV-KR-Y6f"/>
                                     <constraint firstItem="2xX-XZ-Xi4" firstAttribute="top" secondItem="hp2-WO-Mmw" secondAttribute="bottom" constant="20" id="pJU-YP-I9r"/>
                                     <constraint firstAttribute="trailing" secondItem="ehe-AG-Cpi" secondAttribute="trailing" constant="125" id="sIG-9a-kW0"/>
                                     <constraint firstItem="wjO-5m-Bl0" firstAttribute="leading" secondItem="fAM-9g-zf2" secondAttribute="leading" constant="30" id="srG-EB-fH5"/>
@@ -161,15 +164,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HK6-fn-iq4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="-1132"/>
+            <point key="canvasLocation" x="1713" y="-1132"/>
         </scene>
         <!--Main-->
         <scene sceneID="2dW-Md-rax">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rqk-mg-gNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Main" id="hz7-93-NhF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rqk-mg-gNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2227" y="-618"/>
+            <point key="canvasLocation" x="1712" y="-649"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Ebq-cY-pnL">
@@ -179,7 +182,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgraundSky.pmg" translatesAutoresizingMaskIntoConstraints="NO" id="37B-4t-3mJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgraundNew" translatesAutoresizingMaskIntoConstraints="NO" id="37B-4t-3mJ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxt-Ws-O0d">
@@ -275,6 +278,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backgraundNew" width="500" height="333"/>
         <image name="backgraundSky.pmg" width="500" height="333"/>
         <image name="cross.pmg" width="225" height="225"/>
         <image name="smsImages.pmg" width="225" height="225"/>
