@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045E1B9720E0CBA200F8B16A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1B9620E0CBA200F8B16A /* AppDelegate.swift */; };
+		045E1B9C20E0CBA200F8B16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E1B9A20E0CBA200F8B16A /* Main.storyboard */; };
+		045E1B9E20E0CBA500F8B16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045E1B9D20E0CBA500F8B16A /* Assets.xcassets */; };
+		045E1BA120E0CBA500F8B16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E1B9F20E0CBA500F8B16A /* LaunchScreen.storyboard */; };
+		045E1BA920E0CC8300F8B16A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1BA820E0CC8300F8B16A /* LoginViewController.swift */; };
+		045E1BAB20E0CCC300F8B16A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1BAA20E0CCC300F8B16A /* SignUpViewController.swift */; };
+		045E1BBF20E1382400F8B16A /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1BBE20E1382400F8B16A /* UserListTableViewCell.swift */; };
+		045E1BC120E1385000F8B16A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1BC020E1385000F8B16A /* UserListTableViewController.swift */; };
+		045E1BC720E1511B00F8B16A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1BC620E1511B00F8B16A /* User.swift */; };
+		045E1C1020E3453E00F8B16A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1C0F20E3453E00F8B16A /* ChatViewController.swift */; };
+		045E1C1420E39D6600F8B16A /* ListOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E1C1320E39D6600F8B16A /* ListOfUsers.swift */; };
+		04F90D1220E4D02000A649BC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F90D1120E4D02000A649BC /* Onboarding.storyboard */; };
+		67FECB95F78661F9B9EE7CA4 /* Pods_BTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD57D16EBB1BA89D577671 /* Pods_BTChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		045E1B9320E0CBA200F8B16A /* BTChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045E1B9620E0CBA200F8B16A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		045E1B9B20E0CBA200F8B16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045E1B9D20E0CBA500F8B16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045E1BA020E0CBA500F8B16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045E1BA220E0CBA500F8B16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045E1BA820E0CC8300F8B16A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		045E1BAA20E0CCC300F8B16A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		045E1BBE20E1382400F8B16A /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		045E1BC020E1385000F8B16A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		045E1BC620E1511B00F8B16A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		045E1C0F20E3453E00F8B16A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		045E1C1320E39D6600F8B16A /* ListOfUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUsers.swift; sourceTree = "<group>"; };
+		04F90D0D20E4C6A600A649BC /* BTChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		04F90D1120E4D02000A649BC /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		1BBD57D16EBB1BA89D577671 /* Pods_BTChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3064291A7C17629036BF876 /* Pods-BTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTChat/Pods-BTChat.release.xcconfig"; sourceTree = "<group>"; };
+		B84AF0E06602AF5744D09E48 /* Pods-BTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTChat/Pods-BTChat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045E1B9020E0CBA200F8B16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67FECB95F78661F9B9EE7CA4 /* Pods_BTChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045E1B8A20E0CBA200F8B16A = {
+			isa = PBXGroup;
+			children = (
+				045E1B9520E0CBA200F8B16A /* BTChat */,
+				045E1B9420E0CBA200F8B16A /* Products */,
+				045E1BA220E0CBA500F8B16A /* Info.plist */,
+				045E1B9D20E0CBA500F8B16A /* Assets.xcassets */,
+				045E1B9F20E0CBA500F8B16A /* LaunchScreen.storyboard */,
+				4DA58734AB9AD490BCA26ADA /* Pods */,
+				80D90D0AC267EF8A70F96EA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		045E1B9420E0CBA200F8B16A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045E1B9320E0CBA200F8B16A /* BTChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045E1B9520E0CBA200F8B16A /* BTChat */ = {
+			isa = PBXGroup;
+			children = (
+				045E1BB420E0FE0100F8B16A /* Models */,
+				045E1BB320E0FDF000F8B16A /* Storyboards */,
+				045E1BB220E0FDCC00F8B16A /* Controllers */,
+				04F90D0D20E4C6A600A649BC /* BTChat-Bridging-Header.h */,
+			);
+			path = BTChat;
+			sourceTree = "<group>";
+		};
+		045E1BB220E0FDCC00F8B16A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				045E1C0F20E3453E00F8B16A /* ChatViewController.swift */,
+				045E1BC020E1385000F8B16A /* UserListTableViewController.swift */,
+				045E1BBE20E1382400F8B16A /* UserListTableViewCell.swift */,
+				045E1BAA20E0CCC300F8B16A /* SignUpViewController.swift */,
+				045E1BA820E0CC8300F8B16A /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		045E1BB320E0FDF000F8B16A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				045E1B9A20E0CBA200F8B16A /* Main.storyboard */,
+				04F90D1120E4D02000A649BC /* Onboarding.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		045E1BB420E0FE0100F8B16A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				045E1B9620E0CBA200F8B16A /* AppDelegate.swift */,
+				045E1BC620E1511B00F8B16A /* User.swift */,
+				045E1C1320E39D6600F8B16A /* ListOfUsers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4DA58734AB9AD490BCA26ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B84AF0E06602AF5744D09E48 /* Pods-BTChat.debug.xcconfig */,
+				A3064291A7C17629036BF876 /* Pods-BTChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80D90D0AC267EF8A70F96EA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BBD57D16EBB1BA89D577671 /* Pods_BTChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045E1B9220E0CBA200F8B16A /* BTChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045E1BA520E0CBA500F8B16A /* Build configuration list for PBXNativeTarget "BTChat" */;
+			buildPhases = (
+				B22D2049E14C8A44438B6359 /* [CP] Check Pods Manifest.lock */,
+				045E1B8F20E0CBA200F8B16A /* Sources */,
+				045E1B9020E0CBA200F8B16A /* Frameworks */,
+				045E1B9120E0CBA200F8B16A /* Resources */,
+				2104C487B070CB8AD2D00373 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTChat;
+			productName = BTChat;
+			productReference = 045E1B9320E0CBA200F8B16A /* BTChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045E1B8B20E0CBA200F8B16A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = VasylFuchenko;
+				TargetAttributes = {
+					045E1B9220E0CBA200F8B16A = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 045E1B8E20E0CBA200F8B16A /* Build configuration list for PBXProject "BTChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045E1B8A20E0CBA200F8B16A;
+			productRefGroup = 045E1B9420E0CBA200F8B16A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045E1B9220E0CBA200F8B16A /* BTChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045E1B9120E0CBA200F8B16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045E1BA120E0CBA500F8B16A /* LaunchScreen.storyboard in Resources */,
+				045E1B9E20E0CBA500F8B16A /* Assets.xcassets in Resources */,
+				045E1B9C20E0CBA200F8B16A /* Main.storyboard in Resources */,
+				04F90D1220E4D02000A649BC /* Onboarding.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2104C487B070CB8AD2D00373 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BTChat/Pods-BTChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTChat/Pods-BTChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22D2049E14C8A44438B6359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BTChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045E1B8F20E0CBA200F8B16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045E1C1420E39D6600F8B16A /* ListOfUsers.swift in Sources */,
+				045E1BAB20E0CCC300F8B16A /* SignUpViewController.swift in Sources */,
+				045E1BBF20E1382400F8B16A /* UserListTableViewCell.swift in Sources */,
+				045E1BA920E0CC8300F8B16A /* LoginViewController.swift in Sources */,
+				045E1C1020E3453E00F8B16A /* ChatViewController.swift in Sources */,
+				045E1B9720E0CBA200F8B16A /* AppDelegate.swift in Sources */,
+				045E1BC720E1511B00F8B16A /* User.swift in Sources */,
+				045E1BC120E1385000F8B16A /* UserListTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		045E1B9A20E0CBA200F8B16A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045E1B9B20E0CBA200F8B16A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045E1B9F20E0CBA500F8B16A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045E1BA020E0CBA500F8B16A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045E1BA320E0CBA500F8B16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		045E1BA420E0CBA500F8B16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045E1BA620E0CBA500F8B16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84AF0E06602AF5744D09E48 /* Pods-BTChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BTChat/BTChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045E1BA720E0CBA500F8B16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3064291A7C17629036BF876 /* Pods-BTChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BTChat/BTChat-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045E1B8E20E0CBA200F8B16A /* Build configuration list for PBXProject "BTChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045E1BA320E0CBA500F8B16A /* Debug */,
+				045E1BA420E0CBA500F8B16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045E1BA520E0CBA500F8B16A /* Build configuration list for PBXNativeTarget "BTChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045E1BA620E0CBA500F8B16A /* Debug */,
+				045E1BA720E0CBA500F8B16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045E1B8B20E0CBA200F8B16A /* Project object */;
+}
