@@ -15,13 +15,6 @@ class ListOfUsers {
     static let shared = ListOfUsers()
     public init(){}
     
-    func set(_ user: User) {
-        arrayOfUsers.append(user)
-    }
-    
-    func get(_ index: Int) -> User {
-            return arrayOfUsers[index]
-       }
 }
 
 

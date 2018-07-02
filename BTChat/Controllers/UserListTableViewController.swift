@@ -24,16 +24,16 @@ class UserListTableViewController: UITableViewController {
     }
     
     static func createUsers() {
-        ListOfUsers.shared.set(User(id: "1", name: "Vasyl"))
-        ListOfUsers.shared.set(User(id: "2", name: "Yaroslav"))
-        ListOfUsers.shared.set(User(id: "3", name: "Oleg"))
-        ListOfUsers.shared.set(User(id: "4", name: "Ivan"))
-        ListOfUsers.shared.set(User(id: "5", name: "Volodya"))
-        ListOfUsers.shared.set(User(id: "6", name: "Ruslan"))
-        ListOfUsers.shared.set(User(id: "7", name: "Bodya"))
-        ListOfUsers.shared.set(User(id: "8", name: "Ira"))
-        ListOfUsers.shared.set(User(id: "9", name: "Nazar"))
-        ListOfUsers.shared.set(User(id: "10", name: "Dima"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "1", name: "Vasyl"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "2", name: "Yaroslav"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "3", name: "Oleg"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "4", name: "Ivan"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "5", name: "Volodya"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "6", name: "Ruslan"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "7", name: "Bodya"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "8", name: "Ira"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "9", name: "Nazar"))
+        ListOfUsers.shared.arrayOfUsers.append(User(id: "10", name: "Dima"))
     }
     
     // MARK: - Table view data source
@@ -49,7 +49,7 @@ class UserListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserListTableViewCell
-        cell.userName.text = ListOfUsers.shared.get(indexPath.row).name
+        cell.userName.text = ListOfUsers.shared.arrayOfUsers[indexPath.row].name
         return cell
     }
     

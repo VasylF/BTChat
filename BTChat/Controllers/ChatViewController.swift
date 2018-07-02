@@ -8,10 +8,11 @@
 
 import UIKit
 import JSQMessagesViewController
+import UserNotifications
 
 class ChatViewController: JSQMessagesViewController {
     
-    var currentUser = ListOfUsers.shared.get(0)
+    var currentUser = ListOfUsers.shared.arrayOfUsers[0]
     
     
     override func viewDidLoad() {
@@ -20,7 +21,6 @@ class ChatViewController: JSQMessagesViewController {
         // set current id
         self.senderId = currentUser.id
         self.senderDisplayName = currentUser.name
-        
         self.messages = getMessages()
     }
   
@@ -36,11 +36,11 @@ extension  ChatViewController {
     func getMessages() -> [JSQMessage] {
         var funcMessages = [JSQMessage]()
         
-        let senderIdFirst = ListOfUsers.shared.get(0).id
-        let displayNameFirst = ListOfUsers.shared.get(0).name
+        let senderIdFirst = ListOfUsers.shared.arrayOfUsers[0].id
+        let displayNameFirst = ListOfUsers.shared.arrayOfUsers[0].name
 
-        let senderIdSecond = ListOfUsers.shared.get(2).id
-        let displayNameSecond = ListOfUsers.shared.get(2).name
+        let senderIdSecond = ListOfUsers.shared.arrayOfUsers[2].id
+        let displayNameSecond = ListOfUsers.shared.arrayOfUsers[2].name
         
         let message1 = JSQMessage(senderId: senderIdFirst, displayName: displayNameFirst, text: "How are you getting at?")
         let message2 = JSQMessage(senderId: senderIdSecond, displayName: displayNameSecond, text: "I am fine! How are you?")
@@ -89,6 +89,17 @@ extension  ChatViewController {
         let message = JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text)
         self.messages.append(message!)
         finishSendingMessage()
+        
+        // local notification
+        let content = UNMutableNotificationContent()
+        content.title = senderDisplayName
+        content.body = text
+        content.sound = UNNotificationSound.default()
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "Identifare", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
     }
     
 }

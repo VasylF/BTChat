@@ -38,6 +38,7 @@
 		045E1C1320E39D6600F8B16A /* ListOfUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUsers.swift; sourceTree = "<group>"; };
 		04F90D0D20E4C6A600A649BC /* BTChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		04F90D1120E4D02000A649BC /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		04F90D1F20E9F8CE00A649BC /* BTChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BTChat.entitlements; sourceTree = "<group>"; };
 		1BBD57D16EBB1BA89D577671 /* Pods_BTChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3064291A7C17629036BF876 /* Pods-BTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTChat/Pods-BTChat.release.xcconfig"; sourceTree = "<group>"; };
 		B84AF0E06602AF5744D09E48 /* Pods-BTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTChat/Pods-BTChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		045E1B9520E0CBA200F8B16A /* BTChat */ = {
 			isa = PBXGroup;
 			children = (
+				04F90D1F20E9F8CE00A649BC /* BTChat.entitlements */,
 				045E1BB420E0FE0100F8B16A /* Models */,
 				045E1BB320E0FDF000F8B16A /* Storyboards */,
 				045E1BB220E0FDCC00F8B16A /* Controllers */,
@@ -170,6 +172,14 @@
 					045E1B9220E0CBA200F8B16A = {
 						CreatedOnToolsVersion = 9.3.1;
 						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -412,7 +422,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BTChat/BTChat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G65925GU9V;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BTChat/BTChat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -433,7 +447,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BTChat/BTChat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G65925GU9V;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BTChat/BTChat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
